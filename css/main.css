@@ -5462,3 +5462,6 @@ a.token {
     color: #6489d6;
     text-decoration: underline;
 }
+.form-group-added {
+    margin-bottom: 15px;
+}

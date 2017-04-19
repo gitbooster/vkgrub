@@ -1,188 +1,160 @@
 <!doctype html>
 <html class="no-js" lang="">
-	<head>
-		
-		<meta charset="utf-8">
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-		
-		<title>VkGrub</title>
-		
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/themify-icons.css">
-		<link rel="stylesheet" href="css/animate.min.css">
-		
-		
-		<link rel="stylesheet" href="css/skins/palette.css">
-		<link rel="stylesheet" href="css/fonts/font.css">
-		<link rel="stylesheet" href="css/main.css">
-		
-		
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-		
-		<script src="plugins/modernizr.js"></script>
-	</head>
-	
-	<body>
-		<div class="cover" style="background-image: url(img/DeathtoStock_Wired5.jpg)"></div>
-		<div class="overlay bg-color"></div>
-		<div class="app horizontal-layout boxed">
-			
-			<header class="header header-fixed navbar">
-				<div class="brand">
-					
-					<a href="javascript:;" class="ti-menu navbar-toggle off-left visible-xs" data-toggle="collapse" data-target="#hor-menu"></a>
-					
-					
-					<a href="index.html" class="navbar-brand">
-						<img src="img/logo.png" alt="">
-						<span class="heading-font">
-							VkGrub
-						</span>
-					</a>
-					
-				</div>
-				<div class="collapse navbar-collapse pull-left" id="hor-menu">
-					<ul class="nav navbar-nav">
-						
-						
-						<li class="dropdown">
-							<a href="javascript:;" data-toggle="dropdown">
-								<span>Админ Панель</span>
-								
-							</a>
-							
-						</li>
-						
-					</ul>
-				</div>
-				
-				<ul class="nav navbar-nav navbar-right">
-					
-					<li class="off-right">
-						<a href="javascript:;" data-toggle="dropdown">
-							<img src="img/avatar.jpg" class="header-avatar img-circle" alt="user" title="user">
-							<span class="hidden-xs ml10">webtheory</span>
-							<i class="ti-angle-down ti-caret hidden-xs"></i>
-						</a>
-						<ul class="dropdown-menu animated fadeInRight">
-							<li>
-								<a href="javascript:;">Настройки</a>
-							</li>
-							
-							<li>
-								<a href="javascript:;">Помощь</a>
-							</li>
-							<li>
-								<a href="lock.html">Выйти</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</header>
-			
-			<section class="layout">
-				
-				<section class="main-content">
-					
-					<div class="content-wrap">
-						
-						<div class="wrapper">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="panel-body">
-										<form class="form-horizontal" role="form">
-											<div class="form-group">
-												<label class="col-sm-2 control-label">Наценка :</label>
-												<div class="col-sm-10 input-group mb15">
-													<input type="text" class="form-control mb15 input-lg" placeholder="Введите значение">
-													<span class="input-group-btn">
-														<button class="btn btn-default input-lg" type="button">Сохранить </button>
-													</span>
-												</div>
-												
-											</div>
-											<div class="form-group">
-												<label class="col-sm-2 control-label">Тип наценки : <span class="ti-info-alt" data-toggle="tooltip" title="Введите +, или *, для выбора типа наценки. Допустим, вы ввели *, значит , цена будет высчитываться так : Цена * наценка."></span></label>
-												<div class="col-sm-10 input-group mb15">
-													<input type="text" class="form-control mb15 input-lg" placeholder="Введите +, или *, для выбора типа наценки.">
-													<span class="input-group-btn">
-														<button class="btn btn-default input-lg" type="button">Сохранить </button>
-													</span>
-												</div>
-												
-											</div>
-											<div class="form-group">
-												<label class="col-sm-2 control-label"><a href="#" class="token">Ваш</a> AccessToken : <span class="ti-info-alt" data-toggle="tooltip" title="Нажмите на слово ВАШ, и разрешите доступ. Скопируйте ссылку из адресной строки, и вставьте сюда"></span>  </label>
-												<div class="col-sm-10 input-group mb15">
-													<input type="text" class="form-control mb15 input-lg" placeholder="ac2aa18ab9ebfa4383ef377d202f4a5cbfeef8717cf7ca5fa28ed44129ce4c4a6849a0e26232f05f38168">
-													<span class="input-group-btn">
-														<button class="btn btn-default input-lg" type="button">Сохранить </button>
-													</span>
-												</div>
-												
-											</div>
-											
-											<div class="form-group">
-												<label class="col-sm-2 control-label">Настройки   <span class="ti-info-alt" data-toggle="tooltip" title="Текстовые поля: 1 поле - Пользователь откуда парсим. 2 поле - альбом, куда парсим. 3 - Наценка Альбомы: Нажимаем на нужный альбом, допустим ссылка такая : https://vk.com/cupidonbot?z=album-142102660_242761212, нам нужно взять все, начиная со слова album. После, в правый блок с текстом, вводим текст, который вы выцепили, если альбомов НЕСКОЛЬКО, то пишем их через перенос строки"></span> </label>
-												<div class="col-sm-10 input-group mb15">
-													<div class="row">
-														<div class="col-xs-4">
-															<input type="text" class="form-control input-lg" placeholder="Пользователь откуда парсим">
-														</div>
-														<div class="col-xs-4">
-															<input type="text" class="form-control input-lg" placeholder="Aльбом, куда парсим.">
-														</div>
-														<div class="col-xs-4">
-															<input type="text" class="form-control input-lg" placeholder="Наценка">
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="col-sm-2 control-label"></label>
-												<div class="col-sm-10 input-group mb15">
-													<div class="row">
-														<div class="col-xs-3">
-															<button type="submit" class="btn btn-primary input-lg">Сохранить</button>
-														</div>
-														
-													</div>
-												</div>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-				
-				<a class="exit-offscreen"></a>
-			</section>
-			
-		</section>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <title>VkGrub</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/skins/palette.css">
+    <link rel="stylesheet" href="css/fonts/font.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="plugins/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="cover" style="background-image: url(img/DeathtoStock_Wired5.jpg)"></div>
+    <div class="overlay bg-color"></div>
+    <div class="app horizontal-layout boxed">
+      <header class="header header-fixed navbar">
+        <div class="brand">
+          <a href="javascript:;" class="ti-menu navbar-toggle off-left visible-xs" data-toggle="collapse" data-target="#hor-menu"></a>
+          <a href="index.html" class="navbar-brand">
+          <img src="img/logo.png" alt="">
+          <span class="heading-font">
+          VkGrub
+          </span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse pull-left" id="hor-menu">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="javascript:;" data-toggle="dropdown">
+              <span>Админ Панель</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="off-right">
+            <a href="javascript:;" data-toggle="dropdown">
+            <img src="img/avatar.jpg" class="header-avatar img-circle" alt="user" title="user">
+            <span class="hidden-xs ml10">webtheory</span>
+            <i class="ti-angle-down ti-caret hidden-xs"></i>
+            </a>
+            <ul class="dropdown-menu animated fadeInRight">
+              <li>
+                <a href="javascript:;">Настройки</a>
+              </li>
+              <li>
+                <a href="javascript:;">Помощь</a>
+              </li>
+              <li>
+                <a href="lock.html">Выйти</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+      <section class="layout">
+        <section class="main-content">
+          <div class="content-wrap">
+            <div class="wrapper">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">Наценка по умолчанию:</label>
+                        <div class="col-sm-10 input-group mb15">
+                          <input type="text" class="form-control mb15 input-lg" placeholder="Введите значение">
+                          <span class="input-group-btn">
+                          <button class="btn btn-default input-lg" type="button">Сохранить </button>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">Тип наценки : <span class="ti-info-alt" data-toggle="tooltip" title="Введите +, или *, для выбора типа наценки. Допустим, вы ввели *, значит , цена будет высчитываться так : Цена * наценка."></span></label>
+                        <div class="col-sm-10 input-group mb15">
+                          <input type="text" class="form-control mb15 input-lg" placeholder="Введите +, или *, для выбора типа наценки.">
+                          <span class="input-group-btn">
+                          <button class="btn btn-default input-lg" type="button">Сохранить </button>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label"><a href="#" class="token">Ваш</a> AccessToken : <span class="ti-info-alt" data-toggle="tooltip" title="Нажмите на слово ВАШ, и разрешите доступ. Скопируйте ссылку из адресной строки, и вставьте сюда"></span>  </label>
+                        <div class="col-sm-10 input-group mb15">
+                          <input type="text" class="form-control mb15 input-lg" placeholder="ac2aa18ab9ebfa4383ef377d202f4a5cbfeef8717cf7ca5fa28ed44129ce4c4a6849a0e26232f05f38168">
+                          <span class="input-group-btn">
+                          <button class="btn btn-default input-lg" type="button">Сохранить </button>
+                          </span>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">&nbsp;  <span class="ti-info-alt" data-toggle="tooltip" title="Текстовые поля: 1 поле - Пользователь откуда парсим. 2 поле - альбом, куда парсим. 3 - Наценка Альбомы: Нажимаем на нужный альбом, допустим ссылка такая : https://vk.com/cupidonbot?z=album-142102660_242761212, нам нужно взять все, начиная со слова album. После, в правый блок с текстом, вводим текст, который вы выцепили, если альбомов НЕСКОЛЬКО, то пишем их через перенос строки"></span> </label>
+                        <div class="col-sm-10 input-group mb15">
+                        
+                           
+<div id="education_fields">
+	<div class="row form-group-added">
+		<div class="col-xs-4">
+			<input type="text" class="form-control input-lg" placeholder="Пользователь откуда парсим">
+		</div>
+		<div class="col-xs-4">
+			<input type="text" class="form-control input-lg" placeholder="Aльбом, куда парсим.">
+		</div>
+		<div class="col-xs-3">
+			<input type="text" class="form-control input-lg" placeholder="Наценка">
+		</div>
+
+		<div class="col-xs-1">
+			<button class="btn btn-success input-lg add-rows" type="button"  onclick="education_fields();"> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> </button>
+		</div>
+
 	</div>
-	
-	<script src="plugins/jquery-1.11.1.min.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
-	<script src="plugins/jquery.slimscroll.min.js"></script>
-	<script src="plugins/jquery.easing.min.js"></script>
-	<script src="plugins/appear/jquery.appear.js"></script>
-	<script src="plugins/jquery.placeholder.js"></script>
-	<script src="plugins/fastclick.js"></script>
-	
-	
-	
-	
-	<script src="js/offscreen.js"></script>
-	<script src="js/main.js"></script>
-	
-	
-	
-</body>
+</div>
+
+
+
+                       
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-10 input-group mb15">
+                          <div class="row">
+                            <div class="col-xs-3">
+                              <button type="submit" class="btn btn-primary input-lg">Сохранить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <a class="exit-offscreen"></a>
+    </section>
+    </section>
+    </div>
+    <script src="plugins/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="plugins/jquery.slimscroll.min.js"></script>
+    <script src="plugins/jquery.easing.min.js"></script>
+    <script src="plugins/appear/jquery.appear.js"></script>
+    <script src="plugins/jquery.placeholder.js"></script>
+    <script src="plugins/fastclick.js"></script>
+    <script src="js/offscreen.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
